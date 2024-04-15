@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image and Message</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+     .emp_summary_tbl {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .emp_summary_tbl th,
+    .emp_summary_tbl td {
+      /* border: 1px solid #ddd; */
+      padding: 8px;
+      text-align: left;
+    }
+    .earning_amt_tbl {
+        width: 100%;
+      border-collapse: collapse;
+      /* border: 5px solid rgba(185, 182, 182, 0.75); */
+      margin: 0;
+      /* height: 357px;
+      width: 795px; */
+    }
+    .earning_amt_tbl th,
+    .earning_amt_tbl td {
+      padding: 8px;
+      text-align: left;
+    }
+  
+    .salaryStyle {
+        background-color: #8eabd094;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+      .vl {
+        border-left: 4px solid rgb(119, 140, 215);
+        height: 65px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin-right: 10px;
+      }
+      @media print {
+        .salaryStyle {
+          -webkit-print-color-adjust: exact;
+        }
+        .emp_net_slry {
+          -webkit-print-color-adjust: exact;
+        }
+        .hrTag{
+          -webkit-print-color-adjust: exact;
+        }
+      }
+      
+   
+   
+  </style>
+</head>
+<body>
+  <div class="container col-lg-8 col-sm-11 col-md-11"  style="margin: 50px auto">
+    <div class="row">
+      <div class="col-lg-4  col-sm-4 col-md-4 ">
+        <!-- <img src="your-image.jpg" alt="Your Image" class="img-fluid"> -->
+        <img
+        src="./company logo (1).png"
+        alt="company-logo"
+        style="width: 120px; margin-left: 26px"
+        class="img-fluid"
+      />
+      </div>
+      <div class="col-lg-8 col-sm-8 col-md-8">
+        <div class="message">
+            <h2>BridgeFix Technology Pvt. Ltd.</h2>
+            <p style="width: fit-content; text-align: center">
+                <span
+                  style="text-align: center; font-size: 18px; margin-left: 30px"
+                >
+                  Plot No. 388, PU-4, Scheme Number 54 Indore,<br />Vijay Nagar,
+                  India (MP)
+                </span>
+              </p>
+        </div>
+        <div style="text-align: end; margin-right: 100px">
+            <span>Payslip for the Month</span>
+            <h5 contenteditable="true" style="font-size: 20px">October 2023</h5>
+          </div>
+      </div>
+    </div>
+    <hr style="border: 1px solid #04377b" />
+    <div class="row">
+        <div class="col-lg-8 col-sm-8 col-md-8">
+            <table class="emp_summary_tbl">
+                <thead>
+                    <tr>
+                        <th colspan="2" style="min-width: 228px;">EMPLOYEE DETAILS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Employee Name</td>
+                        <td contenteditable="true">: Deependra Singh</td>
+                    </tr>
+                    <tr>
+                        <td>Designation</td>
+                        <td contenteditable="true">: Associate Software Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Date of Joining</td>
+                        <td contenteditable="true">: 01-02-2022</td>
+                    </tr>
+                    <tr>
+                        <td>Pay Period</td>
+                        <td contenteditable="true">: October 2023</td>
+                    </tr>
+                    <tr>
+                        <td>Pay Date</td>
+                        <td contenteditable="true">: 05-11-2023</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-md-4">
+            <div style="border: 1px solid gray; border-radius: 10px">
+                <div class="d-flex emp_net_slry" style="padding: 20px 30px; background-color: #a9c2e65b">
+                    <div class="vl"></div>
+                    <div>
+                        <h2 contenteditable="true">23,935/-</h2>
+                        <span>Employee Net Pay</span>
+                    </div>
+                </div>
+                <hr style="margin: 0px" />
+                <div style="padding: 20px 30px">
+                    <table>
+                        <tr>
+                            <td style="padding-right: 10px">Paid Days</td>
+                            <td contenteditable="true">: <span style="font-weight: bold">18</span></td>
+                        </tr>
+                        <tr>
+                            <td>LOP Days</td>
+                            <td contenteditable="true">: <span style="font-weight: bold">1.5</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr
+    style="
+      background-color: white;
+      border-top: 3px solid rgb(94, 94, 96);
+      height: 3px;
+      width: 100%;
+    "
+  />
+  <div class="col-lg-8">
+    <table class="emp_summary_tbl">
+        <tr>
+            <td >Bank Account No</td>
+            <td contenteditable="true">: 50100492103961</td>
+            <td>PAN</td>
+            <td contenteditable="true">: AVHPN0362J</td>
+          </tr>
+    </table>
+  </div>
+    
+  <div class="row" style="border: 5px solid rgba(185, 182, 182, 0.75);margin-top: 20px;">
+    <div class="col-lg-6 col-sm-6 col-md-6">
+      <table class="earning_amt_tbl">
+        <thead>
+          <tr style="background-color: white; border-bottom: 1px solid rgb(94, 94, 96);">
+            <th>EARNINGS</th>
+            <th>AMOUNT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic</td>
+            <td contenteditable="true">14,370</td>
+          </tr>
+          <tr>
+            <td>House Rent Allowance</td>
+            <td contenteditable="true">9,500</td>
+          </tr>
+          <tr>
+            <td>Convince Allowance</td>
+            <td contenteditable="true">880</td>
+          </tr>
+          <tr>
+            <td>Medical Allowance</td>
+            <td contenteditable="true">1,250</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-lg-6 col-sm-6 col-md-6">
+      <table class="earning_amt_tbl">
+        <thead>
+          <tr style="background-color: white; border-bottom: 1px solid rgb(94, 94, 96);">
+            <th>DEDUCTIONS</th>
+            <th>AMOUNT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Professional Tax</td>
+            <td contenteditable="true">208</td>
+          </tr>
+          <tr>
+            <td>Loss of Pay</td>
+            <td contenteditable="true">91857</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <hr
+    style="
+      background-color: white;
+      border-top: 1.5px solid #04377b;
+      /* height: 2px; */
+      width: 95%;
+    "/>
+ 
+      <!-- <table >
+          <tr>
+            <div class="col-lg-6">
+          <th>Gross Earnings</th>
+          </div>
+          <div class="col-lg-6">
+<th contenteditable="true">26000</th>
+          </div>
+        </tr>
+      </table>
+  -->
+
+  <div class="col-lg-12">
+    <table class="earning_amt_tbl">
+      <thead>
+        <tr style="background-color: white; ">
+          <th>Gross Earnings</th>
+          <th >26000</th>
+          <th>Total Deductions</th>
+          <th style="padding-left: 24px;"> 2065</th>    
+        </tr>
+      </thead>
+    
+    </table>
+  </div>
+  
+</div>
+<div class="row mt-5"  style="border: 1px solid grey; border-radius: 10px;">
+    <div class="col-lg-10 col-sm-10 col-md-10" style="padding: 10px 15px">
+        <h5>TOTAL NET PAYABLE</h5>
+        <span>Gross Earnings - Total Deductions</span>
+
+    </div>
+<div class="col-lg-2 col-sm-2 col-md-2   d-flex align-items-center justify-content-center salaryStyle">
+    <h5 contenteditable="true" style="font-size: 20px; font-weight: 700">23,935/-</h5>
+</div>
+</div>
+<hr
+style="
+  background-color: white;
+  border-top: 3px solid rgb(94, 94, 96);
+  height: 3px;
+  width: 100%;
+"
+/>
+
+  </div>
+  </div>
+
+  <!-- Bootstrap JS (optional, if you need any JavaScript features from Bootstrap) -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
